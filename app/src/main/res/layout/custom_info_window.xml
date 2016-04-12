@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/default_margin"
+    android:layout_marginLeft="@dimen/default_margin"
+    android:layout_marginRight="@dimen/default_margin"
+    android:layout_marginStart="@dimen/default_margin"
+    android:background="@android:color/transparent"
+    android:padding="@dimen/default_padding">
+
+    <LinearLayout
+        android:id="@+id/content_holder"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/info_window_text_max_width"
+                android:padding="@dimen/default_padding"
+                android:textSize="@dimen/text_input" />
+
+            <TextView
+                android:id="@+id/snippet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/info_window_text_max_width"
+                android:gravity="center"
+                android:padding="@dimen/default_padding"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/info_window_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin_2x"
+            android:layout_marginStart="@dimen/default_margin_2x"
+            android:src="@drawable/right_arrow" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_holder"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/custom_info_bubble_arrow" />
+</RelativeLayout>

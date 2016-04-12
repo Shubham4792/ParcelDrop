@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:scaleType="center"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/back"
+        android:layout_toLeftOf="@+id/close"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/back"
+        android:textSize="@dimen/toolbar_title"
+        android:layout_toStartOf="@+id/close"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:scaleType="center"
+        android:src="@drawable/close" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_separator"
+        android:layout_alignParentBottom="true"
+        android:background="#000" />
+
+</RelativeLayout>

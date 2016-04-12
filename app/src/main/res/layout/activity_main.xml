@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_height"
+            android:layout_weight="9"
+            android:background="@drawable/search_filler_bg"
+            android:hint="@string/search_address"
+            android:imeOptions="actionSearch"
+            android:padding="@dimen/default_padding"
+            android:selectAllOnFocus="true" />
+
+        <ImageView
+            android:id="@+id/search_cta"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_height"
+            android:layout_weight="1"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pickup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:padding="@dimen/default_padding"
+        android:singleLine="true"
+        android:text="@string/pickup_text_title"
+        android:textColor="#000"
+        android:textSize="@dimen/text_input" />
+
+    <LinearLayout
+        android:id="@+id/address_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>
+

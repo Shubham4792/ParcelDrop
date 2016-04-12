@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/in_app_notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/error_bg"
+    android:gravity="center_vertical"
+    android:padding="@dimen/default_margin">
+
+    <ImageView
+        android:id="@+id/notification_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:src="@drawable/error" />
+
+    <TextView
+        android:id="@+id/notification_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:singleLine="false"
+        android:textColor="#000"
+        android:textSize="@dimen/text_input" />
+</FrameLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8"
+        android:orientation="vertical"
+        tools:context="com.example.shubhampandey.parceldrop.activity.DetailActivity">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/same_day_cta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3"
+                    android:padding="8dp"
+                    android:text="@string/same_day"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/flexible_cta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3"
+                    android:padding="8dp"
+                    android:text="@string/flexible"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/standard_cta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3"
+                    android:padding="8dp"
+                    android:text="@string/standard"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/doc_cta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/documents"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/food_cta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/food_item"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/other_cta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/other"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/weight_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:padding="8dp"
+                        android:text="@string/weight_string"
+                        android:textColor="#222"
+                        android:textSize="@dimen/card_text_size"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/weight_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:hint="@string/enter_weight_in_grams"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textColor="#222"
+                        android:textSize="@dimen/card_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/distance_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:padding="8dp"
+                        android:text="@string/distance_string"
+                        android:textColor="#222"
+                        android:textSize="@dimen/card_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/distance_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="#d3d3d3"
+                        android:padding="8dp"
+                        android:textColor="#222"
+                        android:textSize="@dimen/card_text_size"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/heading_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3"
+                    android:padding="8dp"
+                    android:text="@string/order_details"
+                    android:textColor="#222"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pickup_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3"
+                    android:padding="8dp"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/drop_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3"
+                    android:padding="8dp"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cost_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#d3d3d3"
+                    android:padding="8dp"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/confirm_cta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/confirm"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cancel_cta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/cancel"
+                    android:textColor="#222"
+                    android:textSize="@dimen/card_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
