@@ -1,2 +1,2 @@
 # ParcelDrop
-An Android app to place parcel orders across the country
+A mock android app to place parcel orders across the country
